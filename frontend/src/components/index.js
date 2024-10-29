@@ -1,6 +1,6 @@
 import Header from "./Header";
 import Footer from "./Footer";
-import Hero from "./Hero";
+import Hero from "./Hero/Hero";
 import Contact from "./Contact";
 import Price from "./Price";
 import Process from "./Process";

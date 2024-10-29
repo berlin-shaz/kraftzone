@@ -1,7 +1,7 @@
 {
   "name": "hi",
   "version": "0.1.0",
-  "homepage": "https://pubsites.gitlab.io/hi/",
+  "private": "true",
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "7.21.11",
     "@reduxjs/toolkit": "^2.2.7",
