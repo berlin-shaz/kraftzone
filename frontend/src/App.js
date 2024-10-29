@@ -1,17 +1,24 @@
 import React from 'react';
-import './App.css';
-
-import {Header, Hero, Footer} from './components';
-
+import { Header, Hero, Footer } from './components';
 
 function App() {
   return (
     <>
-    <Header />
 
-    <Hero />
+      <section>
+        <Header />
+      </section>
+      
 
-    <Footer />
+      <section>
+        <Hero />
+      </section>
+      
+      
+      <section>
+        <Footer />
+      </section>
+
     </>
   );
 }
