@@ -34,7 +34,7 @@ const Carousel = () => {
             modules={[EffectCoverflow, Pagination]}
             className="mySwiper"
         > 
-            <SwiperSlide>
+            <SwiperSlide className='rounded-lg'>
                 <img src={kraftzone_img1} />
                 <h1 className='text-xl font-bold text-orange-600 px-2 mt-2'>Wohnungsauflösungen</h1>
                 <p className='text-sm text-lime-900 px-2 mt-2' >
@@ -42,7 +42,7 @@ const Carousel = () => {
                 </p>
                 <button className='p-2 text-white bg-orange-700 mt-3 hover:bg-green-900 rounded-lg mx-2'>Antrag</button>
             </SwiperSlide>
-            <SwiperSlide>
+            <SwiperSlide className='rounded-lg'>
                 <img src={kraftzone_img1} />
                 <h1 className='text-xl font-bold text-orange-600 px-2 mt-2'>Entrümpelung Entsorgung</h1>
                 <p className='text-sm text-lime-900 px-2 mt-2' >
@@ -50,7 +50,7 @@ const Carousel = () => {
                 </p>
                 <button className='p-2 text-white bg-orange-700 mt-3 hover:bg-green-900 rounded-lg mx-2'>Antrag</button>
             </SwiperSlide>
-            <SwiperSlide>
+            <SwiperSlide className='rounded-lg'>
                 <img src={kraftzone_img1} />
                 <h1 className='text-xl font-bold text-orange-600 px-2 mt-2'>Reinigung Entsorgung</h1>
                 <p className='text-sm text-lime-900 px-2 mt-2' >
@@ -58,7 +58,7 @@ const Carousel = () => {
                 </p>
                 <button className='p-2 text-white bg-orange-700 mt-3 hover:bg-green-900 rounded-lg mx-2'>Antrag</button>
             </SwiperSlide>
-            <SwiperSlide>
+            <SwiperSlide className='rounded-lg'>
                 <img src={kraftzone_img1} />
                 <h1 className='text-xl font-bold text-orange-600 px-2 mt-2'>Kunden die uns Vertrauen</h1>
                 <p className='text-sm text-lime-900 px-2 mt-2' >
@@ -66,7 +66,7 @@ const Carousel = () => {
                 </p>
                 <button className='p-2 text-white bg-orange-700 mt-3 hover:bg-green-900 rounded-lg mx-2'>Antrag</button>
             </SwiperSlide>
-            <SwiperSlide>
+            <SwiperSlide className='rounded-lg'>
                 <img src={kraftzone_img1} />
                 <h1 className='text-xl font-bold text-orange-600 px-2 mt-2'>Kundenfreundlich & Seriös</h1>
                 <p className='text-sm text-lime-900 px-2 mt-2' >
@@ -74,7 +74,7 @@ const Carousel = () => {
                 </p>
                 <button className='p-2 text-white bg-orange-700 mt-3 hover:bg-green-900 rounded-lg mx-2'>Antrag</button>
             </SwiperSlide>
-            <SwiperSlide>
+            <SwiperSlide className='rounded-lg'>
                 <img src={kraftzone_img1} />
                 <h1 className='text-xl font-bold text-orange-600 px-2 mt-2'>Keine Verstckten Kosten</h1>
                 <p className='text-sm text-lime-900 px-2 mt-2' >
