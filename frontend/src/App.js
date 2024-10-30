@@ -1,9 +1,9 @@
 import React from 'react';
-import { Header, Hero, Footer } from './components';
+import { Header, Hero, Services, Footer } from './components';
 
 function App() {
   return (
-    <>
+    <div>
 
       <section>
         <Header />
@@ -13,13 +13,17 @@ function App() {
       <section>
         <Hero />
       </section>
+
+      <section id='leistungen'>
+        <Services />
+      </section>
       
       
       <section>
         <Footer />
       </section>
 
-    </>
+    </div>
   );
 }
 
