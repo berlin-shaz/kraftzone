@@ -6,6 +6,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
+import 'swiper/css/scrollbar'
 
 import './carousel.css';
 
@@ -24,13 +25,16 @@ const Carousel = () => {
             centeredSlides={true}
             slidesPerView={'auto'}
             coverflowEffect={{
-                rotate: 50,
+                rotate: 30,
                 stretch: 0,
-                depth: 100,
+                depth: 50,
                 modifier: 1,
                 slideShadows: true,
             }}
-            pagination={true}
+            
+            pagination={{
+                clickable: true,
+              }}
             modules={[EffectCoverflow, Pagination]}
             className="mySwiper"
         > 

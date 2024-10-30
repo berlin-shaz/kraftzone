@@ -10,7 +10,7 @@ function Hero() {
       <section>
 
         <div className='flex flex-col justify-center gap-1 bg-slate-700 min-h-screen'>
-          <div className='sm:mt-10 mt-5'>
+          <div className='max-sm:mt-16 mt-14'>
             <h1 className='max-sm:text-4xl text-8xl font-bold text-orange-700 uppercase lg:px-8 px-2'>KraftZone</h1>
             <p className='text-sm text-white lg:px-10 px-3'>Wir entsorgen Ihre Last</p>
           </div>
