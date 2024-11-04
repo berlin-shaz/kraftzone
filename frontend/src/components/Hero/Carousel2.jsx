@@ -11,16 +11,16 @@ import 'swiper/css/scrollbar'
 import './carousel.css';
 
 // import required modules
-import { EffectCoverflow, Pagination } from 'swiper/modules';
+import { EffectCards, EffectCoverflow, Pagination } from 'swiper/modules';
 
 
 import { kraftzone_img1 } from '../../assets/images'
 
-const Carousel = () => {
-    return (
-
+const Carousel2 = () => {
+  return (
+    <div>
         <Swiper
-            effect={'coverflow'}
+            effect={'cards'}
             grabCursor={true}
             centeredSlides={true}
             slidesPerView={'auto'}
@@ -35,7 +35,7 @@ const Carousel = () => {
             pagination={{
                 clickable: true,
               }}
-            modules={[EffectCoverflow, Pagination]}
+            modules={[EffectCards, Pagination]}
             className="mySwiper"
         > 
             <SwiperSlide className='rounded-lg'>
@@ -87,10 +87,8 @@ const Carousel = () => {
                 <button className='p-2 text-white bg-orange-700 mt-3 hover:bg-green-900 rounded-lg mx-2'>Antrag</button>
             </SwiperSlide>
         </Swiper>
-
-
-
-    )
+    </div>
+  )
 }
 
-export default Carousel;
+export default Carousel2;
