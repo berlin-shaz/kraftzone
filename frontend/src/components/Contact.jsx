@@ -58,7 +58,7 @@ export default function Kontakt() {
             onChange={handleChange}
             placeholder="Nachricht"
             required
-            className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 bg-slate-100 text-orange-500 h-32 resize-none"
+            className="w-full p-3 border border-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 bg-gray-100 text-orange-500 h-32 resize-none"
           ></textarea>
           
           <div className="flex items-center">
