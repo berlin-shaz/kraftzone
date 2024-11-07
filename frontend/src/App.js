@@ -1,5 +1,6 @@
 import React from 'react';
-import { Header, Navbar, Hero, We, Services, Process, Reference, Price, Footer } from './components';
+import { Header, Navbar, Hero, We, Services, Process, Reference, Price, Footer, Contact } from './components';
+import Kontakt from './components/Contact';
 
 function App() {
   return (
@@ -32,6 +33,9 @@ function App() {
 
       <section>
         <Price />
+      </section>
+      <section>
+        <Kontakt />
       </section>
 
       <section>
