@@ -30,7 +30,7 @@ export default function Kontakt() {
   return (
     <div className="flex flex-col items-center min-h-screen bg-gray-100 py-10">
       <div className="max-w-3xl w-full bg-gray-50 rounded-lg shadow-lg p-8">
-        <h2 className="text-2xl font-semibold text-center mb-6 text-orange-500">Kontaktieren Sie uns</h2>
+        <h2 className="text-2xl font-semibold text-center mb-6 text-orange-500">Noch Frage ?</h2>
         
         {/* Kontaktformular */}
         <form onSubmit={handleSubmit} className="space-y-4">
