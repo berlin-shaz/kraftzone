@@ -100,9 +100,8 @@ function Services() {
                       onClick={() => {
                         navigate("/service" + (index + 1));
                       }}
-                      className="absolute bottom-4 right-4 p-3 bg-blue-900 text-white rounded-full shadow-lg transform group-hover:scale-110 transition duration-300 ease-in-out"
-                    >
-                      <FaArrowRight />
+                      className="absolute bottom-4 flex space-x-1 text-xs items-center right-4 p-3 bg-orange-600 text-white rounded-full shadow-lg transform group-hover:scale-110 transition duration-300 ease-in-out"
+                    > <span className="flex">Details</span><span className="flex"><FaArrowRight /></span>
                     </button>
                  
             </div>
