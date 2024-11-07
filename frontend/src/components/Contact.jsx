@@ -30,7 +30,7 @@ export default function Kontakt() {
   return (
     <div className="flex flex-col items-center min-h-screen bg-gray-100 py-10">
       <div className="max-w-3xl w-full bg-gray-50 rounded-lg shadow-lg p-8">
-        <h2 className="text-2xl font-semibold text-center mb-6 text-orange-500">Noch Frage ?</h2>
+        <h2 className="text-3xl font-semibold text-center mb-6 text-orange-500">Noch Frage ?</h2>
         
         {/* Kontaktformular */}
         <form onSubmit={handleSubmit} className="space-y-4">
@@ -41,7 +41,7 @@ export default function Kontakt() {
             onChange={handleChange}
             placeholder="Name"
             required
-            className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 bg-slate-300 text-orange-500"
+            className="w-full p-3 border border-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 bg-gray-100 text-orange-500"
           />
           <input
             type="email"
@@ -50,7 +50,7 @@ export default function Kontakt() {
             onChange={handleChange}
             placeholder="E-Mail-Adresse"
             required
-            className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 bg-slate-300 text-orange-500"
+            className="w-full p-3 border border-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 bg-gray-100 text-orange-500"
           />
           <textarea
             name="message"
@@ -58,7 +58,7 @@ export default function Kontakt() {
             onChange={handleChange}
             placeholder="Nachricht"
             required
-            className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 bg-slate-300 text-orange-500 h-32 resize-none"
+            className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 bg-slate-100 text-orange-500 h-32 resize-none"
           ></textarea>
           
           <div className="flex items-center">
@@ -67,7 +67,7 @@ export default function Kontakt() {
               name="sendCopy"
               checked={formData.sendCopy}
               onChange={handleChange}
-              className="w-4 h-4 text-orange-500 bg-slate-500 border-gray-300 rounded focus:ring-2 focus:ring-orange-500"
+              className="w-4 h-4 text-orange-500 bg-gray-100 border-gray-300 rounded focus:ring-2 focus:ring-orange-500"
             />
             <label htmlFor="sendCopy" className="ml-2 text-orange-500 text-sm">
               Schicken Sie mir eine Kopie dieser Nachricht
