@@ -1,7 +1,18 @@
 import React from "react";
-import {useNavigate} from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { srvhauscleaning } from "../assets/images";
+import {
+  srvhauscleaning,
+  srvofficecleaning,
+  srvkitchencleaning,
+  srvwastecollection,
+  srvbasementcleaning,
+  srvcrimescencecleaning,
+  srvrefrigeratordisposal,
+  srvwashmachinedisposal,
+  srvkitchendisposal,
+  srvconstructionwastedisposal,
+} from "../assets/images";
 
 import { FaChevronLeft, FaChevronRight, FaArrowRight } from "react-icons/fa";
 
@@ -9,46 +20,57 @@ const services = [
   {
     title: "Hausauflösung",
     image: srvhauscleaning, // replace with actual image source
+    url: "house-cleaning",
   },
   {
     title: "Büroauflösung",
-    image: "https://via.placeholder.com/300x400",
+    image: srvofficecleaning,
+    url: "office-cleaning",
   },
   {
     title: "Küchenentrümpelung",
-    image: "https://via.placeholder.com/300x400",
+    image: srvkitchencleaning,
+    url: "kitcken-cleaning",
   },
   {
     title: "Sperrmüllabholung",
-    image: "https://via.placeholder.com/300x400",
+    image: srvwastecollection,
+    url: "waste-collection",
   },
   {
     title: "Kellerentrümpelung",
-    image: "https://via.placeholder.com/300x400",
+    image: srvbasementcleaning,
+    url: "basement-clearance",
   },
   {
     title: "Tatortreinigung",
-    image: "https://via.placeholder.com/300x400",
+    image: srvcrimescencecleaning,
+    url: "crime-scene-cleaning",
   },
   {
     title: "Kühlschrank Entsorgung",
-    image: "https://via.placeholder.com/300x400",
+    image: srvrefrigeratordisposal,
+    url: "refrigrator-disposal",
   },
   {
     title: "Waschmaschine Entsorgung",
-    image: "https://via.placeholder.com/300x400",
+    image: srvwashmachinedisposal,
+    url: "washmachine-disposal",
   },
   {
     title: "Küchen Entsorgung",
-    image: "https://via.placeholder.com/300x400",
+    image: srvkitchendisposal,
+    url: "kitchen-disposal",
   },
   {
     title: "Bauschutt Entsorgung",
-    image: "https://via.placeholder.com/300x400",
+    image: srvconstructionwastedisposal,
+    url: "construction-waste-disposal",
   },
   {
     title: "Elektroschrut Entsorgung",
     image: "https://via.placeholder.com/300x400",
+    url: "electronic-waste-disposal",
   },
 ];
 
@@ -78,32 +100,31 @@ function Services() {
         </div>
 
         {/* Service Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
           {services.map((service, index) => (
-            
             <div
               key={index}
-              className="relative group bg-white rounded-lg overflow-hidden shadow-lg"
+              className="relative group bg-white rounded-lg overflow-hidden shadow-lg transform hover:scale-110 hover:cursor-pointer transition duration-300 ease-in-out"
             >
               <img
                 src={service.image}
+                onClick={() => {
+                  navigate(service.url);
+                }}
                 alt={service.title}
-                className="w-full h-64 object-cover rounded-lg"
+                className="rounded-lg p-10"
               />
-              <div className="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black to-transparent opacity-90">
-                <h3 className="text-white font-semibold text-lg">
-                  {service.title}
-                </h3>
+              <div className=" bottom-0 left-0 w-full p-1">
+                <p className="font-semibold text-center">{service.title}</p>
               </div>
-              
-                    <button
+
+              {/* <button
                       onClick={() => {
-                        navigate("/service" + (index + 1));
+                        navigate(service.url);
                       }}
                       className="absolute bottom-4 flex space-x-1 text-xs items-center right-4 p-3 bg-orange-600 text-white rounded-full shadow-lg transform group-hover:scale-110 transition duration-300 ease-in-out"
                     > <span className="flex">Details</span><span className="flex"><FaArrowRight /></span>
-                    </button>
-                 
+                    </button> */}
             </div>
           ))}
         </div>

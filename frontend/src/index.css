@@ -7,3 +7,29 @@ body{
   margin: 0;
   padding: 0;
 }
+
+/* Global styles */
+body {
+  @apply text-xs;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  color:#ff6f00ed; /* Header color */
+}
+
+h1 {
+  @apply text-2xl;
+}
+
+h2 {
+  @apply text-xl;
+}
+
+h3 {
+  @apply text-lg;
+}
+
+p {
+  @apply text-sm/6 leading-relaxed;
+}

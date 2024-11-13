@@ -1,11 +1,13 @@
 import React from "react";
 
+
+
 const steps = [
   {
     title: "Besichtigung",
     description:
       "Wir nehmen uns die Zeit für eine kostenlose Vor-Ort-Besichtigung, um die Anforderungen zu verstehen. (Über unser Kontaktformular können Sie uns auch gerne Bilder ihrer Räumlichkeiten senden). Bei uns gibt es keine versteckten Kosten – du weißt genau, was auf dich zukommt.",
-    //icon: "📋", // Replace with the appropriate icon or icon component
+    //icon: "", // Replace with the appropriate icon or icon component
     number: "01",
   },
   {

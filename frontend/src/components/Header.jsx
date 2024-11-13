@@ -10,7 +10,7 @@ function Header() {
 
   return (
     <nav className="w-full fixed z-20 flex justify-between items-center px-4 py-2 bg-white bg-opacity-15 backdrop-blur-md border border-white border-opacity-20">
-      <div className="flex items-center justify-start">
+      <div className="flex items-center justify-start ">
         <img src={logo} alt="logo" className="w-20 h-5 md:w-36 md:h-10" />
       </div>
 

@@ -1,17 +1,15 @@
 
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import {
-   Main
-} from "./components";
-import Service1 from "./pages/Service1";
+import {Main} from "./components";
+import HouseCleaning from "./pages/HouseCleaning";
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<Main />}></Route>
-        <Route path="/service1" element={<Service1 />}></Route>
+        <Route path="/house-cleaning" element={<HouseCleaning />}></Route>
       </Routes>
     </Router>
   );
