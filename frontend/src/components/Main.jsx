@@ -1,6 +1,7 @@
 import React from 'react'
 
-import {Header, Hero, We, Services, Process, Reference, Price, Footer, Contact } from './';
+import {Header, Hero, We, Services, Process, Reference, Price, Footer, Contact, Faq } from './';
+import Features from './Features';
 
 export default function Main() {
   return (
@@ -17,6 +18,10 @@ export default function Main() {
           <We />
         </section>
 
+        <section>
+          <Features />
+        </section>
+
         <section id="leistungen">
           <Services />
         </section>
@@ -31,6 +36,10 @@ export default function Main() {
 
         <section>
           <Price />
+        </section>
+
+        <section>
+          <Faq />
         </section>
 
         <section>

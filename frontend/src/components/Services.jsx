@@ -84,18 +84,19 @@ function Services() {
     <div className="bg-gray-50 py-16 px-8 flex justify-center">
       <div className="max-w-6xl w-full">
         {/* Header Section */}
-        <div className="text-center md:text-left mb-10">
-          <p className="text-orange-600 font-bold text-2xl md:text-3xl">
+        <div className="text-center mb-8">
+          <h1 className="md:text-xl text-center">
             UNSERE LEISTUNGEN
-          </p>
-          <h2 className="text-1xl md:text-2xl font-bold text-gray-800">
-            Wir entrümpeln Ihr Haus oder Ihre Wohnung schnell und gründlich.
-          </h2>
-          <div className="flex items-center justify-center md:justify-start mt-4">
-            <p className="text-6xl font-extrabold text-gray-800">460+</p>
-            <span className="ml-4 text-gray-600">
-              Professional and Experienced staff ready to help you
-            </span>
+          </h1>
+          
+          <div className="flex items-center text-center justify-center md:justify-start mt-4">
+            <p className=" text-gray-800">
+              Leistungen im Bereich der Entrümpelung umfassen das fachgerechte
+              Entsorgen von Sperrmüll, Elektrogeräten und anderen Abfällen.
+              Zudem bieten wir auch die Demontage von Möbeln und die Reinigung
+              der Räumlichkeiten an. Unser erfahrenes Team sorgt dafür, dass
+              Ihre Entrümpelung schnell und zuverlässig durchgeführt wird.
+            </p>
           </div>
         </div>
 

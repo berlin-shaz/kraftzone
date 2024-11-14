@@ -19,10 +19,10 @@ function Hero() {
           <div className='flex justify-center items-center lg:px-10'>
           <Carousel />
           </div>
-          <div className='lg:p-10 p-3'>
+          {/* <div className='lg:p-10 p-3'>
             <h1 className='text-2xl font-semibold text-orange-600'>Wir entrümpeln & entsorgen in Berlin und Umgebung</h1>
             <p className='text-lg text-white text-wrap mt-6'>Wir bieten unseren Kunden maßgeschneiderte Dienstleistungen kostengünstige Aufräumarbeiten inklusive Entsorgung für private und gewerbliche Zwecke. Kraftzone erledigt Reinigungsarbeiten jeglicher Art in Berlin professionell und transparent.</p>
-          </div>
+          </div> */}
 
         </div>
 

@@ -9,5 +9,7 @@ import Services from "./Services";
 import We from "./We";
 import Navbar from "./Navbar";
 import Main from "./Main";
+import Features from "./Features";
+import Faq from "./Faq";
 
-export {Header, Footer, Hero, Contact, Price, Process, Reference, Services, We, Navbar, Main};
+export {Header, Footer, Hero, Contact, Price, Process, Reference, Services, We, Navbar, Main, Features, Faq};
