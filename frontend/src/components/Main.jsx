@@ -1,15 +1,11 @@
 import React from 'react'
 
-import {Header, Hero, We, Services, Process, Reference, Price, Footer, Contact, Faq } from './';
+import { Hero, We, Services, Process, Reference, Price, Contact, Faq } from './';
 import Features from './Features';
 
 export default function Main() {
   return (
     <>
-        <section>
-          <Header />
-        </section>
-
         <section>
           <Hero />
         </section>
@@ -44,12 +40,7 @@ export default function Main() {
 
         <section>
           <Contact />
-        </section>
-
-        <section>
-          <Footer />
-        </section>
-        
+        </section>        
     </>
   )
 }

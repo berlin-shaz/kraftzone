@@ -1,5 +1,6 @@
 import { FaFacebookF, FaXing, FaLinkedinIn, FaPinterest, FaInstagram, FaTiktok } from 'react-icons/fa';
 import { MdLocationOn, MdPhone, MdEmail, MdFax } from 'react-icons/md';
+import { NavLink } from 'react-router-dom';
 
 function Footer() {
   return (
@@ -7,7 +8,7 @@ function Footer() {
       <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Logo and About */}
         <div>
-          <h2 className="text-3xl font-bold text-orange-500 mb-2">Kraftzone</h2>
+          <NavLink to={'/'}><h2 className="text-3xl font-bold text-orange-500 mb-2">Kraftzone</h2></NavLink>
           <p className="text-gray-300 mb-4">Cleaning Service Provider</p>
           <p className="text-gray-300 mb-4">
             There are many variations of passages of Lorem Ipsum available, There are many variations of passages.
@@ -25,7 +26,7 @@ function Footer() {
 
         {/* Services */}
         <div>
-          <h3 className="text-lg font-bold mb-4">Services</h3>
+          <NavLink to={'/house-cleaning'}><h3 className="text-lg font-bold mb-4">Services</h3></NavLink>
           <ul className="space-y-2">
             <li>&rsaquo; Toilet Cleaning</li>
             <li>&rsaquo; Room Cleaning</li>

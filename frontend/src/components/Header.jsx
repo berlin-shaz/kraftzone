@@ -4,6 +4,7 @@ import { HiMenuAlt4, HiX } from 'react-icons/hi';
 import {motion} from 'framer-motion';
 
 import {logo} from '../assets/images';
+import { NavLink } from 'react-router-dom';
 
 function Header() {
   const [toggle, setToggle] = useState(false);
@@ -11,16 +12,18 @@ function Header() {
   return (
     <nav className="w-full fixed z-20 flex justify-between items-center px-4 py-2 bg-white bg-opacity-15 backdrop-blur-md border border-white border-opacity-20">
       <div className="flex items-center justify-start ">
-        <img src={logo} alt="logo" className="w-20 h-5 md:w-36 md:h-10" />
+        <NavLink to={'/'}>
+          <img src={logo} alt="logo" className="w-20 h-5 md:w-36 md:h-10" />
+        </NavLink>
       </div>
 
       <ul className="hidden md:flex flex-1 justify-center items-center list-none">
         {['startseite', 'leistungen', 'preis', 'kontakt', 'über uns'].map((item) => (
           <li key={`link-${item}`} className="flex flex-col items-center mx-4 cursor-pointer">
             <div className="w-1 h-1 bg-transparent rounded-full mb-1"></div>
-            <a href={`#${item}`} className="uppercase text-orange-500 font-xs transition-colors duration-300 hover:text-secondary">
+            <NavLink to={`#${item}`} className="uppercase text-orange-500 font-xs transition-colors duration-300 hover:text-secondary">
               {item}
-            </a>
+            </NavLink>
           </li>
         ))}
       </ul>
@@ -40,13 +43,13 @@ function Header() {
             <ul className="flex flex-col items-start list-none w-full h-full">
               {['startseite', 'leistungen', 'preis', 'kontakt', 'über uns'].map((item) => (
                 <li key={item} className="m-4">
-                  <a
-                    href={`#${item}`}
+                  <NavLink
+                    to={`#${item}`}
                     onClick={() => setToggle(false)}
                     className="uppercase text-orange-500 text-lg font-medium transition-colors duration-300 hover:text-secondary"
                   >
                     {item}
-                  </a>
+                  </NavLink>
                 </li>
               ))}
             </ul>
