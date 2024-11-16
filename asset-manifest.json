@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/kraftzone/static/css/main.56bf4114.css",
+    "main.js": "/kraftzone/static/js/main.21937b83.js",
+    "static/media/house-cleaning.jpg": "/kraftzone/static/media/house-cleaning.72efff9a759018b632e7.jpg",
+    "static/media/cleaning.jpg": "/kraftzone/static/media/cleaning.efcae79ce4073595b702.jpg",
+    "static/media/service-contact.jpg": "/kraftzone/static/media/service-contact.8d3ecb91ad7420dce0b3.jpg",
+    "static/media/kraftzonewebheader.jpg": "/kraftzone/static/media/kraftzonewebheader.2218ad1c64320f93b443.jpg",
+    "static/media/house-cleaning.png": "/kraftzone/static/media/house-cleaning.d6a80e0bbf538ec64b99.png",
+    "static/media/can.png": "/kraftzone/static/media/can.300d7dbb1a9efb3c63b6.png",
+    "static/media/trash-can.png": "/kraftzone/static/media/trash-can.28d50ef536539de4114b.png",
+    "static/media/basement-cleaning.png": "/kraftzone/static/media/basement-cleaning.9d54eca5fecbe6feb30f.png",
+    "static/media/offer.png": "/kraftzone/static/media/offer.fda36f2a0725ce00afa5.png",
+    "static/media/office-cleaning.png": "/kraftzone/static/media/office-cleaning.c4a694d1b852df3a7a2e.png",
+    "static/media/kitchen-disposal.png": "/kraftzone/static/media/kitchen-disposal.a46956ddad2dc00dd655.png",
+    "static/media/tour-guide.png": "/kraftzone/static/media/tour-guide.a1e7cd4eb8032580b03e.png",
+    "static/media/police-line.png": "/kraftzone/static/media/police-line.19d8a563213640989a9e.png",
+    "static/media/washmachine-disposal.png": "/kraftzone/static/media/washmachine-disposal.48f320d5d83dac829816.png",
+    "static/media/refrigerator-disposal.png": "/kraftzone/static/media/refrigerator-disposal.25a15c743faf1a52d8d6.png",
+    "static/media/construction-waste-disposal.png": "/kraftzone/static/media/construction-waste-disposal.99a9e1348046464f86f9.png",
+    "static/media/kitchen-cleaning.png": "/kraftzone/static/media/kitchen-cleaning.6350fc1e9a629f9081f7.png",
+    "index.html": "/kraftzone/index.html",
+    "main.56bf4114.css.map": "/kraftzone/static/css/main.56bf4114.css.map",
+    "main.21937b83.js.map": "/kraftzone/static/js/main.21937b83.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.56bf4114.css",
+    "static/js/main.21937b83.js"
+  ]
+}
