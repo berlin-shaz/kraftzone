@@ -1,7 +1,7 @@
 {
   "name": "hi",
   "version": "0.1.0",
-  "homepage": "https://<username>.github.io/<repo>",
+  "homepage": "https://berlin-shaz.github.io/kraftzone",
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "7.21.11",
     "@reduxjs/toolkit": "^2.2.7",
