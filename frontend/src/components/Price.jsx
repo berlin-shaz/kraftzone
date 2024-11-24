@@ -1,79 +1,24 @@
 import React from "react";
+import {FaPhoneAlt, FaPhoneSlash} from 'react-icons/fa';
+
 
 const Price = () => {
   return (
-    <div className="max-w-6xl mx-auto p-8 bg-white">
-      {/* Header Section */}
-      <div className="mb-10">
-        <h3 className="text-sm uppercase text-gray-400 font-semibold mb-2">Pricing Table</h3>
-        <h2 className="text-4xl font-light text-gray-800 mb-4">
-          The best pricing to help you!
-        </h2>
-        <p className="text-gray-600">
-          We carefully screen all of our cleaners, so you can rest assured that your home would receive the absolute highest quality of service providing.
-        </p>
-      </div>
-
-      {/* Pricing Cards Section */}
-      <div className="grid md:grid-cols-3 gap-6">
-        {/* Small Business Card */}
-        <div className="p-6 border rounded-xl shadow-md text-gray-800">
-          <h4 className="text-lg font-medium text-gray-500">Small Business</h4>
-          <div className="flex items-baseline mt-4 mb-4">
-            <span className="text-3xl font-bold text-gray-800">$</span>
-            <span className="text-5xl font-bold text-gray-800">299</span>
-            <span className="text-lg font-medium text-gray-500">/mo</span>
-          </div>
-          <ul className="text-gray-600 mb-6 space-y-2">
-            <li>✅ Custom Schedules Everyday</li>
-            <li>✅ Washrooms Cleaning</li>
-            <li>✅ Waiting Area Cleaning</li>
-            <li>✅ Desks And Workstations Cleaning</li>
-            <li>✅ Floor Cleaning</li>
-          </ul>
-          <button className="bg-gray-100 text-gray-800 font-semibold py-2 px-4 rounded-full w-full">
-            Purchase Now &rarr;
-          </button>
-        </div>
-
-        {/* Large Business Card (Highlighted) */}
-        <div className="p-6 rounded-xl shadow-md text-gray-800 bg-orange-500">
-          <h4 className="text-lg font-medium text-gray-700">Large Business</h4>
-          <div className="flex items-baseline mt-4 mb-4">
-            <span className="text-3xl font-bold text-gray-800">$</span>
-            <span className="text-5xl font-bold text-gray-800">350</span>
-            <span className="text-lg font-medium text-gray-500">/mo</span>
-          </div>
-          <ul className="text-gray-700 mb-6 space-y-2">
-            <li>✅ Custom Schedules Everyday</li>
-            <li>✅ Washrooms Cleaning</li>
-            <li>✅ Waiting Area Cleaning</li>
-            <li>✅ Desks And Workstations Cleaning</li>
-            <li>✅ Floor Cleaning</li>
-          </ul>
-          <button className="bg-gray-900 text-white font-semibold py-2 px-4 rounded-full w-full">
-            Purchase Now &rarr;
-          </button>
-        </div>
-
-        {/* Big Business Card */}
-        <div className="p-6 border rounded-xl shadow-md text-gray-800">
-          <h4 className="text-lg font-medium text-gray-500">Big Business</h4>
-          <div className="flex items-baseline mt-4 mb-4">
-            <span className="text-3xl font-bold text-gray-800">$</span>
-            <span className="text-5xl font-bold text-gray-800">499</span>
-            <span className="text-lg font-medium text-gray-500">/mo</span>
-          </div>
-          <ul className="text-gray-600 mb-6 space-y-2">
-            <li>✅ Custom Schedules Everyday</li>
-            <li>✅ Washrooms Cleaning</li>
-            <li>✅ Waiting Area Cleaning</li>
-            <li>✅ Desks And Workstations Cleaning</li>
-            <li>✅ Floor Cleaning</li>
-          </ul>
-          <button className="bg-gray-100 text-gray-800 font-semibold py-2 px-4 rounded-full w-full">
-            Purchase Now &rarr;
-          </button>
+    <div className="w-full mx-auto p-8 bg-slate-200">
+      <div className="flex flex-col md:flex-row md:px-36">
+        <div className="md:mr-[100px]">
+          <h2 className="mb-2">Keine versteckten Kosten, nur transparente Festpreise garantiert.</h2>
+          <p className="text-xs text-justify">
+            Kraftzone garantiert, dass unsere Angebote keine versteckten
+            Gebühren enthalten. Gerne beraten wir Sie zum besten Angebot für
+            Ihre gewünschte Reinigung in Berlin. Auch für den professionellen
+            Versand und bundesweite Umzüge zu günstigen Preisen sind wir der
+            richtige Partner. Sprechen Sie uns einfach an.
+          </p></div>
+        <div className="items-center mt-auto mb-auto text-center">
+        <button className="mt-4 px-6 py-3 bg-white border border-gray-300 rounded-full shadow-md justify-center flex items-center w-full space-x-2 hover:bg-gray-50">
+            <span className="font-medium text-gray-800 px-2"><FaPhoneAlt /></span> 03081799980
+        </button>
         </div>
       </div>
     </div>

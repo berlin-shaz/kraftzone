@@ -1,48 +1,129 @@
-import React from 'react'
-import Carousel from './Carousel'
+import React from "react";
+import { FaCheckCircle, FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
+import Carousel from "./Carousel";
 
-import { cleaning, houseCleaning } from '../../assets/images'
+import { cleaning } from "../../assets/images";
 
 function Hero() {
   return (
-    <div>
-
-      <section>
-
-        <div className='flex max-sm:flex-col flex-row justify-between bg-cover bg-center items-center min-h-screen'
-        style={{ backgroundImage: `url(${cleaning})`}}
-        >
-          <div className=' p-20'>
-            <h1 className='max-sm:text-5xl text-8xl font-bold text-orange-700 uppercase lg:px-8 px-2'>
-              <span className='text-black'>Kraft</span>Zone
-            </h1>
-            <p className='text-lg lg:px-10 px-3 text-black'>Wir entsorgen Ihre Last</p>
-          </div>
-          <div className='min-h-fit p-10 flex items-center min-w-0'>
-            <Carousel />
-          </div>
+    <div
+      className="flex md:flex-row bg-cover items-center min-h-screen"
+      style={{ backgroundImage: `url(${cleaning})` }}
+    >
+      <div className="flex flex-col md:flex-row">
+        {/* left side */}
+        <div className="mt-40">
+          <h1 className="max-sm:text-5xl text-8xl font-bold text-orange-700 uppercase lg:px-8 px-2">
+            <span className="text-black">Kraft</span>Zone
+            <p className="text-lg lg:px-10 px-3 text-black">
+              Wir entsorgen Ihre Last
+            </p>
+          </h1>
         </div>
-        {/* <div className='flex flex-col justify-center gap-1 bg-slate-700 min-h-screen'> */}
-        {/* <div className='max-sm:mt-16 mt-14 bg-white'>
-            <h1 className='max-sm:text-4xl text-8xl font-bold text-orange-700 uppercase lg:px-8 px-2'>
-              <span className='text-black'>Kraft</span>Zone
-              </h1>
-            <p className='text-lg text-white lg:px-10 px-3'>Wir entsorgen Ihre Last</p>
+        {/* right side */}
+        <div className="md:w-1/2 md:min-w-[600px]">
+          <h2 className="text-white px-8">Unsere Leistungen im Überblick</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-8 mt-8 px-8">
+            <div className="flex items-center space-x-2 max-h-7 px-2 bg-orange-500 rounded-lg opacity-70">
+              <span className="text-sm text-white">
+                <FaCheckCircle />
+              </span>
+              <p className="text-white md:text-base">Wohnungsauflösung</p>
+            </div>
+            <div className="flex items-center space-x-2 max-h-7 px-2 bg-orange-500 rounded-lg opacity-70">
+              <span className="text-sm text-white">
+                <FaCheckCircle />
+              </span>
+              <p className="text-white md:text-base">Bürosauflösung</p>
+            </div>
+            <div className="flex items-center space-x-2 max-h-7 px-2 bg-orange-500 rounded-lg opacity-70">
+              <span className="text-sm text-white">
+                <FaCheckCircle />
+              </span>
+              <p className="text-white md:text-base">Küchenentrümpelung</p>
+            </div>
+            <div className="flex items-center space-x-2 max-h-7 px-2 bg-orange-500 rounded-lg opacity-70">
+              <span className="text-sm text-white">
+                <FaCheckCircle />
+              </span>
+              <p className="text-white md:text-base">SperrmüllAbholung</p>
+            </div>
+            <div className="flex items-center space-x-2 max-h-6 px-2 bg-orange-500 rounded-lg opacity-70">
+              <span className="text-sm text-white">
+                <FaCheckCircle />
+              </span>
+              <p className="text-white md:text-base">Kellerentrümpelung</p>
+            </div>
+            <div className="flex items-center space-x-2 max-h-6 px-2 bg-orange-500 rounded-lg opacity-70">
+              <span className="text-sm text-white">
+                <FaCheckCircle />
+              </span>
+              <p className="text-white md:text-base">Tatortreinigung</p>
+            </div>
+            <div className="flex items-center space-x-2 max-h-6 px-2 bg-orange-500 rounded-lg opacity-70">
+              <span className="text-sm text-white">
+                <FaCheckCircle />
+              </span>
+              <p className="text-white md:text-base">Kühlschrank Entsorgung</p>
+            </div>
+            <div className="flex items-center space-x-2 max-h-6 px-2 bg-orange-500 rounded-lg opacity-70">
+              <span className="text-sm text-white">
+                <FaCheckCircle />
+              </span>
+              <p className="text-white md:text-base">
+                Waschmaschine Entsorgung
+              </p>
+            </div>
+            <div className="flex items-center space-x-2 max-h-6 px-2 bg-orange-500 rounded-lg opacity-70">
+              <span className="text-sm text-white">
+                <FaCheckCircle />
+              </span>
+              <p className="text-white md:text-base">Küchen Entsorgung</p>
+            </div>
+            <div className="flex items-center space-x-2 max-h-6 px-2 bg-orange-500 rounded-lg opacity-70">
+              <span className="text-sm text-white">
+                <FaCheckCircle />
+              </span>
+              <p className="text-white md:text-base">Bauschutt Entsorgung</p>
+            </div>
+            <div className="flex items-center space-x-2 max-h-6 px-2 bg-orange-500 rounded-lg opacity-70">
+              <span className="text-sm text-white">
+                <FaCheckCircle />
+              </span>
+              <p className="text-white md:text-base">
+                Elektroschrott Entsorgung
+              </p>
+            </div>
           </div>
-          <div className='flex justify-center items-center lg:px-10'>
-          <Carousel />
-          </div> */}
-        {/* <div className='lg:p-10 p-3'>
-            <h1 className='text-2xl font-semibold text-orange-600'>Wir entrümpeln & entsorgen in Berlin und Umgebung</h1>
-            <p className='text-lg text-white text-wrap mt-6'>Wir bieten unseren Kunden maßgeschneiderte Dienstleistungen kostengünstige Aufräumarbeiten inklusive Entsorgung für private und gewerbliche Zwecke. Kraftzone erledigt Reinigungsarbeiten jeglicher Art in Berlin professionell und transparent.</p>
-          </div> */}
 
-        {/* </div> */}
+          <div className="flex md:flex-row py-8 px-8">
+            <a href="tel:+4915254106617">
+              <div className="flex shrink-0 items-center mr-8 md:text-lg text-white bg-orange-500 p-4 rounded-full hover:text-orange-400 transition-colors">
+                <span className="px-2">
+                  <FaPhoneAlt />
+                </span>
+                03081799980
+              </div>
+            </a>
 
-      </section>
-
+            <a
+              href="https://wa.me/yourwhatsappnumber"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="flex shrink-0 items-center mr-8 md:text-lg text-white bg-green-500 p-4 rounded-full hover:text-green-400 transition-colors">
+                <span className="px-2">
+                  <FaWhatsapp />{" "}
+                </span>{" "}
+                +4081799980
+              </div>{" "}
+            </a>
+          </div>
+        </div>{" "}
+        {/* end of right side */}
+      </div>
     </div>
-  )
+  );
 }
 
-export default Hero
+export default Hero;

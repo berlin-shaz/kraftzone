@@ -12,6 +12,7 @@ import {
   srvwashmachinedisposal,
   srvkitchendisposal,
   srvconstructionwastedisposal,
+  srvelectronicwastedisposal,
 } from "../assets/images";
 
 import { FaChevronLeft, FaChevronRight, FaArrowRight } from "react-icons/fa";
@@ -20,74 +21,71 @@ const services = [
   {
     title: "Hausauflösung",
     image: srvhauscleaning, // replace with actual image source
-    url: "house-cleaning",
+    url: "wohnungsauflosung",
   },
   {
     title: "Büroauflösung",
     image: srvofficecleaning,
-    url: "office-cleaning",
+    url: "buroauflosung",
   },
   {
     title: "Küchenentrümpelung",
     image: srvkitchencleaning,
-    url: "kitcken-cleaning",
+    url: "kuchenentrumpelung",
   },
   {
     title: "Sperrmüllabholung",
     image: srvwastecollection,
-    url: "waste-collection",
+    url: "sperrmullabholung",
   },
   {
     title: "Kellerentrümpelung",
     image: srvbasementcleaning,
-    url: "basement-clearance",
+    url: "kellerentrumpelung",
   },
   {
     title: "Tatortreinigung",
     image: srvcrimescencecleaning,
-    url: "crime-scene-cleaning",
+    url: "tatortreinigung",
   },
   {
     title: "Kühlschrank Entsorgung",
     image: srvrefrigeratordisposal,
-    url: "refrigrator-disposal",
+    url: "kuhlschrankentsorgung",
   },
   {
     title: "Waschmaschine Entsorgung",
     image: srvwashmachinedisposal,
-    url: "washmachine-disposal",
+    url: "waschmaschineentsorgung",
   },
   {
     title: "Küchen Entsorgung",
     image: srvkitchendisposal,
-    url: "kitchen-disposal",
+    url: "kuchenentsorgung",
   },
   {
     title: "Bauschutt Entsorgung",
     image: srvconstructionwastedisposal,
-    url: "construction-waste-disposal",
+    url: "bauschuttentsorgung",
   },
   {
     title: "Elektroschrut Entsorgung",
-    image: "https://via.placeholder.com/300x400",
-    url: "electronic-waste-disposal",
+    image: srvelectronicwastedisposal,
+    url: "elektroschruttentsorgung",
   },
 ];
 
 function Services() {
   const navigate = useNavigate();
 
-  const handleClick = () => {
-    navigate("/service1"); // Replace with your target route
-  };
   return (
     <div className="bg-gray-50 py-16 px-8 flex justify-center">
       <div className="max-w-6xl w-full">
         {/* Header Section */}
         <div className="text-center mb-8">
-          <h1 className="md:text-xl text-center">
+          <h2 className="md:text-xl text-center">
             UNSERE LEISTUNGEN
-          </h1>
+          </h2>
           
           <div className="flex items-center text-center justify-center md:justify-start mt-4">
             <p className=" text-gray-800">
@@ -110,22 +108,19 @@ function Services() {
               <img
                 src={service.image}
                 onClick={() => {
-                  navigate(service.url);
+                  navigate("/leistungen/" + service.url);
                 }}
                 alt={service.title}
+                title={service.title}
+                width={512}
+                height={512}
+                loading="lazy"
                 className="rounded-lg p-10"
               />
               <div className=" bottom-0 left-0 w-full p-1">
                 <p className="font-semibold text-center">{service.title}</p>
               </div>
 
-              {/* <button
-                      onClick={() => {
-                        navigate(service.url);
-                      }}
-                      className="absolute bottom-4 flex space-x-1 text-xs items-center right-4 p-3 bg-orange-600 text-white rounded-full shadow-lg transform group-hover:scale-110 transition duration-300 ease-in-out"
-                    > <span className="flex">Details</span><span className="flex"><FaArrowRight /></span>
-                    </button> */}
             </div>
           ))}
         </div>

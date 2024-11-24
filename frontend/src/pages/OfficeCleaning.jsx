@@ -1,7 +1,28 @@
-import React from 'react'
+import React from "react";
+import { useLocation } from "react-router-dom";
 
-export default function OfficeCleaning() {
+import { Header, Services } from "../components";
+import {
+  ServiceHero,
+  ServiceContact,
+  OfficeCleaningInfo,
+} from "../components/services/";
+
+function OfficeCleaning() {
+  const param = useLocation();
+  const heroImage = param.pathname.split("/").pop();
   return (
-    <div>OfficeCleaning</div>
-  )
+    <>
+      <section 
+      id="startseite"><ServiceHero 
+      heroImage={heroImage + ".jpg"}
+      title="Wir räumen Ihr Büro"
+      /></section>
+      <OfficeCleaningInfo />
+      <section id="kontakt">{<ServiceContact />}</section>
+      <section id="leistungen"><Services /></section>
+    </>
+  );
 }
+
+export default OfficeCleaning;

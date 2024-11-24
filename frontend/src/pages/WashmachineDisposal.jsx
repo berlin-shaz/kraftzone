@@ -1,7 +1,21 @@
-import React from 'react'
+import React from "react";
 
-export default function WashmachineDisposal() {
+import { Header, Services } from "../components";
+import {
+  ServiceHero,
+  ServiceContact,
+  WashmachineDisposalInfo,
+} from "../components/services/";
+
+function WashmachineDisposal() {
   return (
-    <div>WashmachineDisposal</div>
-  )
+    <>
+      <section id="startseite"><ServiceHero /></section>
+      <WashmachineDisposalInfo />
+      <section id="kontakt">{<ServiceContact />}</section>
+      <section id="leistungen"><Services /></section>
+    </>
+  );
 }
+
+export default WashmachineDisposal;

@@ -1,8 +1,6 @@
 import React from "react";
 
-import {visit, offer, can} from "../assets/images";
-
-
+import { visit, offer, can } from "../assets/images";
 
 const steps = [
   {
@@ -35,16 +33,26 @@ const Process = () => {
   return (
     <div className="bg-slate-700 text-white p-10 mx-auto flex flex-col md:flex-row items-center gap-8">
       <div className="min-w-[250px]">
-      <h1 className=" text-white mb-8 text-center">
-        Ihre Entrümpelung mit uns in wenigen Schritten
-      </h1></div>
+        <h2 className=" text-white mb-8 text-center">
+          Ihre Entrümpelung mit uns in wenigen Schritten
+        </h2>
+      </div>
       <div className="flex flex-col md:flex-row gap-6">
         {steps.map((step, index) => (
           <div
             key={index}
             className="relative bg-slate-700 p-6 rounded-lg flex-1 flex flex-col items-center border-2 border-orange-500"
           >
-            <div className="mb-4 text-orange-600"><img src={step.image} className="w-20 h-20 filter invert brightness-0 sepia saturate-200 hue-rotate-15" /></div>
+            <div className="mb-4 text-orange-600">
+              <img
+                src={step.image}
+                alt={step.title}
+                title={step.title}
+                width={512}
+                height={512}
+                className="w-20 h-20 filter invert brightness-0 sepia saturate-200 hue-rotate-15"
+              />
+            </div>
             <h3 className="text-xl font-semibold mb-2">{step.title}</h3>
             <p className="text-gray-300 text-center mb-4">{step.description}</p>
             <div className="absolute bottom-4 right-4 flex items-center justify-center bg-white text-blue-800 rounded-full w-8 h-8 font-bold">

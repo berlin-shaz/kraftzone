@@ -1,5 +1,5 @@
 import {React, useState} from "react";
-import {berlinerMietverein} from "../assets/images";
+import {berlinerMietverein, kraftzoneKraft} from "../assets/images";
 
 const reviews = [
   {
@@ -31,8 +31,12 @@ const Reference = () => {
       {/* Left Image Section */}
       <div className="w-full md:w-1/2">
         <img
-          src="https://via.placeholder.com/500" // Replace with the actual image URL
+          src={kraftzoneKraft}
           alt="Satisfied Client"
+          loading="lazy"
+          title="Kraftzone Kraft"
+          width={500}
+          height={500}
           className="rounded-xl object-cover"
         />
       </div>
@@ -62,6 +66,10 @@ const Reference = () => {
           <img
             src={berlinerMietverein} // Replace with the client's image URL
             alt="Berliner Mietverein"
+            title="Berliner Mietverein"
+            loading="lazy"
+            width={10}
+            height={10}
             className="w-10 h-10 rounded-full mr-4"
           />
           <div>

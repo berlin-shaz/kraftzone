@@ -14,7 +14,7 @@ import './carousel.css';
 import { EffectCoverflow, Pagination } from 'swiper/modules';
 
 
-import { kraftzone_img1 } from '../../assets/images'
+import { kraftzone_img1 } from '../../assets/images';
 
 const Carousel = () => {
     return (
