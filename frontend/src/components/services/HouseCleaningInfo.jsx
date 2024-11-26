@@ -3,9 +3,9 @@ import React from "react";
 function HouseCleaningInfo() {
   return (
     <section className="bg-gray-100 p-8 w-full md:px-40 mx-auto">
-      <h1 className="text-3xl font-bold mb-6 text-gray-900">
+      <h2 className="font-bold mb-6">
         Die Entrümpelung den Profis Überlassen. Zügig und unkompliziert.
-      </h1>
+      </h2>
 
       <div className="grid md:grid-cols-2 gap-8">
         {/* Left Column */}

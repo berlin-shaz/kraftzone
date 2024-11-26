@@ -98,7 +98,7 @@ function Hero() {
 
           <div className="flex md:flex-row py-8 px-8">
             <a href="tel:+4915254106617">
-              <div className="flex shrink-0 items-center mr-8 md:text-lg text-white bg-orange-500 p-4 rounded-full hover:text-orange-400 transition-colors">
+              <div className="flex shrink-0 items-center mr-8 md:text-lg text-white p-4 rounded-full bg-orange-500 hover:text-orange-400 transition-colors">
                 <span className="px-2">
                   <FaPhoneAlt />
                 </span>

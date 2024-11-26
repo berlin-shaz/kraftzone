@@ -175,15 +175,19 @@ function Footer() {
         </NavLink>
       </div>
 
-      {/* <div className='md:hidden justify-center h-16 items-center grid grid-cols-3 space-x-2'>
-        <div className='text-center'><FaMobileAlt />Only on Mobile
+      <div className='justify-center h-14 items-center grid grid-cols-3 space-x-2 md:hidden'>
+        <div className='text-center'>
+          <p className="text-xs flex flex-col items-center"><FaMobileAlt />Anrufen</p>
         </div>
         
-        <div className='text-center'><FaWhatsapp /> Only on Mobile
+        <div className='text-center mx-auto border-r-2 border-gray-50 border-l-2'>
+        <p className="text-xs flex flex-col items-center"><FaWhatsapp /> Whatsapp </p>
         </div>
         
-        <div className='text-center'><FaWpforms /> Only on Mobile</div>
-      </div> */}
+        <div className='text-center'>
+        <p className="text-xs flex flex-col items-center"><FaWpforms /> Anfrage </p>
+        </div>
+      </div>
     </footer>
   );
 }

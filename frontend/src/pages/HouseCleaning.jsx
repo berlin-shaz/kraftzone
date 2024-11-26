@@ -1,5 +1,6 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 import { Header, Services } from "../components";
 import {
@@ -15,13 +16,35 @@ function HouseCleaning() {
 
   return (
     <>
+      <Helmet>
+        <title>Wohnungsauflösung | Kraftzone</title>
+        <meta property="og:type" content="website" />
+        <meta
+          name="description" content="Wir bieten professionelle, preiswerte und schnelle Lösungen für jede Art von Haushaltsauflösung in Berlin."/>
+        <meta
+          name="keywords" content="Wohnungseigentümer, Renovierungen, Hausauflösung, Streichen der Wände, bloßen Abholung über Möbelabbau, Demontage, Abriss und Entsorgung"/>
+        <meta
+          property="og:title" content="Wohnungsauflösung | Kraftzone"/>
+        <meta
+          property="og:description" content="Wohnungseigentümer, Renovierungen, Hausauflösung, Streichen der Wände, bloßen Abholung über Möbelabbau, Demontage, Abriss und Entsorgung"/>
+        <meta property="og:image" content="URL-to-your-image.jpg" />
+        <meta property="og:url" content="https://www.kraftyzone.de/" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta http-equiv="Content-Language" content="de"></meta>
+        <link rel="canonical" href="/leistungen/wohnungsauflosung"></link>
+      </Helmet>
+
       <section id="startseite">
-        <ServiceHero 
-        heroImage={heroImage + ".jpg"} 
-        title="Wohnungsauflösung" /></section>
+        <ServiceHero
+          heroImage={heroImage + ".avif"}
+          title="Wohnungsauflösung"
+        />
+      </section>
       <HouseCleaningInfo />
       <section id="kontakt">{<ServiceContact />}</section>
-      <section id="leistungen"><Services /></section>
+      <section id="leistungen">
+        <Services />
+      </section>
     </>
   );
 }
