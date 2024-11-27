@@ -37,7 +37,7 @@ function HouseCleaning() {
       <section id="startseite">
         <ServiceHero
           heroImage={heroImage + ".avif"}
-          title="Wohnungsauflösung"
+          title="Professionalle Wohnungsauflösung"
         />
       </section>
       <HouseCleaningInfo />

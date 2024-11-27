@@ -22,18 +22,18 @@ const ServiceHero = ({ heroImage, title }) => {
   console.log("../../assets/images/" + heroImage);
   return (
     <div
-      className="flex flex-col min-h-80% bg-cover"
+      className="flex flex-col min-h-90% bg-cover bg-center"
       style={{
         backgroundImage: `url(${process.env.PUBLIC_URL}/images/${heroImage})`,
       }}
     >
-      <div className="flex flex-col text-white px-4">
+      <div className="flex flex-col px-4">
         {/* left side */}
         <div className="mt-20">
-          <h1 className="font-bold mb-4 mt-32 px-8 text-black">{title}</h1>
-          <p className="font-bold text-white px-8 py-2 max-w-2xl rounded mb-6">
+          <h1 className="font-bold mb-2 mt-32 px-8 text-black">{title}</h1>
+          <h2 className="font-bold text-white px-8 py-2 max-w-2xl rounded mb-6">
             flexibel. besenrein. zuverlässig.
-          </p>
+          </h2>
           <div className="md:w-1/2 md:min-w-[600px]">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-8 mt-8 px-8">
               {items.map((item, index) => (

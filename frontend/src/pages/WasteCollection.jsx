@@ -1,7 +1,52 @@
-import React from 'react'
+import React from "react";
+import { useLocation } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
-export default function WasteCollection() {
+import { Header, Services } from "../components";
+import {
+  ServiceHero,
+  ServiceContact,
+  SperrmullabholungInfo,
+} from "../components/services/";
+
+function WasteCollection() {
+  const param = useLocation();
+  const heroImage = param.pathname.split("/").pop();
+  //console.log(url + ".jpg");
+
   return (
-    <div>WasteCollection</div>
-  )
+    <>
+      <Helmet>
+        <title>Sperrmüllabholung | Kraftzone</title>
+        <meta property="og:type" content="website" />
+        <meta
+          name="description" content="Wir bieten professionelle, preiswerte und schnelle Lösungen für jede Art von Haushaltsauflösung in Berlin."/>
+        <meta
+          name="keywords" content="Küchenentrümpelung, Renovierungen, Hausauflösung, Streichen der Wände, bloßen Abholung über Möbelabbau, Demontage, Abriss und Entsorgung"/>
+        <meta
+          property="og:title" content="Sperrmüllabholung | Kraftzone"/>
+        <meta
+          property="og:description" content="Wohnungseigentümer, Renovierungen, Hausauflösung, Streichen der Wände, bloßen Abholung über Möbelabbau, Demontage, Abriss und Entsorgung"/>
+        <meta property="og:image" content="URL-to-your-image.jpg" />
+        <meta property="og:url" content="https://www.kraftyzone.de/" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta http-equiv="Content-Language" content="de"></meta>
+        <link rel="canonical" href="/leistungen/kuechenentruempelung"></link>
+      </Helmet>
+
+      <section id="startseite">
+        <ServiceHero
+          heroImage={heroImage + ".avif"}
+          title="Wir holen Ihren Sperrmüll ab"
+        />
+      </section>
+      <SperrmullabholungInfo />
+      <section id="kontakt">{<ServiceContact />}</section>
+      <section id="leistungen">
+        <Services />
+      </section>
+    </>
+  );
 }
+
+export default WasteCollection;

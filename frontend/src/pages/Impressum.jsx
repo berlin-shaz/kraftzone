@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import {
   FaPhoneAlt,
   FaFax,
@@ -8,11 +8,14 @@ import {
 import { MdEmail } from "react-icons/md";
 
 function Impressum() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <div className="py-10"></div>
       <section>
-        <div className="px-48">
+        <div className="px-8 md:px-60">
           <h1 className="text-center">Impressum & Haftungsausschluss</h1>
 
           <h2 className="mt-16">

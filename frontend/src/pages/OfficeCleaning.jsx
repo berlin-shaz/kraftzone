@@ -16,7 +16,7 @@ function OfficeCleaning() {
       <section 
       id="startseite"><ServiceHero 
       heroImage={heroImage + ".jpg"}
-      title="Wir räumen Ihr Büro"
+      title="Wir räumen Ihr Büro in ganz Berlin"
       /></section>
       <OfficeCleaningInfo />
       <section id="kontakt">{<ServiceContact />}</section>

@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 function Datenschutz() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <div className="py-10"></div>
       <section>
-        <div className="px-60 text-justify">
+        <div className="px-8 md:px-60 text-justify">
           <h1 className="text-center">Datenschutzerklärung gemäß DSGVO.</h1>
 
           <ul className="text-base list-decimal text-orange-500">
