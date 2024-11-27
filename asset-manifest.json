@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/kraftzone/static/css/main.d578d8c6.css",
-    "main.js": "/kraftzone/static/js/main.641b395a.js",
+    "main.css": "/kraftzone/static/css/main.cd950871.css",
+    "main.js": "/kraftzone/static/js/main.303a8b6d.js",
     "static/media/service-contact.jpg": "/kraftzone/static/media/service-contact.8d3ecb91ad7420dce0b3.jpg",
     "static/media/cleaning.jpg": "/kraftzone/static/media/cleaning.4ab7ea31cd98cdd5eeb2.jpg",
     "static/media/kraftzonewebheader.jpg": "/kraftzone/static/media/kraftzonewebheader.2218ad1c64320f93b443.jpg",
@@ -23,11 +23,11 @@
     "static/media/after-slider.jpg": "/kraftzone/static/media/after-slider.b59b55576e8bec448d7b.jpg",
     "static/media/kitchen-cleaning.png": "/kraftzone/static/media/kitchen-cleaning.6350fc1e9a629f9081f7.png",
     "index.html": "/kraftzone/index.html",
-    "main.d578d8c6.css.map": "/kraftzone/static/css/main.d578d8c6.css.map",
-    "main.641b395a.js.map": "/kraftzone/static/js/main.641b395a.js.map"
+    "main.cd950871.css.map": "/kraftzone/static/css/main.cd950871.css.map",
+    "main.303a8b6d.js.map": "/kraftzone/static/js/main.303a8b6d.js.map"
   },
   "entrypoints": [
-    "static/css/main.d578d8c6.css",
-    "static/js/main.641b395a.js"
+    "static/css/main.cd950871.css",
+    "static/js/main.303a8b6d.js"
   ]
 }
